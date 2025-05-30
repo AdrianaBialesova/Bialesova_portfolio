@@ -156,7 +156,7 @@ i{
     background-color: var(--darkgray);
   }
 
-._artpics, ._2Dpics, ._3Dpics{
+.art__pics, ._2D__pics, ._3D__pics{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -229,13 +229,21 @@ img{
   margin: auto;
 }
 
+.imgalery{
 
+  transition: all 0.3s;
+}
+ 
+.imgalery:hover{
+  transform: scale(1.1);
+}
 
-#nadpis_mywork{
+#_2D__nadpis, #art__nadpis{
   color: var(--white);
   font-size: xx-large;
 }
-._2Dpics{
+
+._2D__pics{
   display: flex;
   gap: 20px;
 
@@ -255,7 +263,7 @@ img{
   color: var(--white);
 }
 
-._3Dpics{
+._3D__pics{
   display: flex;
   gap: 20px;
 
@@ -276,7 +284,7 @@ img{
   color: var(--black);
 }
 
-._artpics{
+.art__pics{
   display: flex;
   gap: 20px;
 
@@ -286,7 +294,7 @@ img{
   right: 0;
 }
 
-._art{
+.art{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -296,6 +304,8 @@ img{
   color: var(--white);
   margin-bottom: 50px;
 }
+
+
 
 #abme__paragraph__left{
   display: flex;
@@ -331,4 +341,41 @@ img{
   justify-content: center;
   padding: 20px;
   font-size: 20px;
+}
+
+.formular{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-size: 20px;
+  font-family: "Karla", serif;
+
+
+}
+
+.formular input, .formular textarea{
+  width: 300px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--darkgray);
+}
+.formular input[type="submit"]{
+  background-color: var(--red);
+  color: var(--white);
+  cursor: pointer;
+}
+.formular input[type="submit"]:hover{
+  background-color: var(--geyred);
+}
+
+
+.formular__name, .formular__email, .formular__message, .formular__subscribe{
+  display: flex;
+  width: 300px;
+
+  border-radius: 5px;
+
 }
